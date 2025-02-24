@@ -50,6 +50,5 @@ Route::get('test4/{name}/{marks}',function($name,$marks){
 });
 
 //controllers
-Route::get('/mycontroller',[testController::class,'index']);
-
+Route::get('/index',[myController::class,'index']);
 Route::get('/display',[myController::class,'display']);
