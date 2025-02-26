@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testController;
 use App\Http\Controllers\myController;
+use App\Http\Controllers\StudentController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -52,3 +53,6 @@ Route::get('test4/{name}/{marks}',function($name,$marks){
 //controllers
 Route::get('/index',[myController::class,'index']);
 Route::get('/display',[myController::class,'display']);
+Route::get('/problem1/{name}/{age}',[myController::class,'problem1']);
+Route::get('/students/{name?}',[StudentController::class,'displayStudents']);
+Route::get('/multistudents',[StudentController::class,'displayStudents1']);

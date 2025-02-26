@@ -13,4 +13,9 @@ class myController extends Controller{
         $marks = 28;
         return "Hello $name Your marks are $marks";
     }
+    public function problem1($name,$age){
+        // $name = "Abhishek";
+        // $age = 28;
+        return view('problem1',['name'=>$name,'age'=>$age]);
+    }
 }

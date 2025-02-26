@@ -1,0 +1,9 @@
+1) composer create-project "laravel/laravel:^10.0" example-app
+2) php artisan make:controller StudentController
+3) php artisan serve
+
+create a controller mycontroller 
+create a function that return view the view print two variable -name and marks.
+now create a route that accepts two route route parameters name and marks which are further passed to the view through the controller
+
+
